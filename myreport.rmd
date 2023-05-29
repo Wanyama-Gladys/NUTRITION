@@ -1,0 +1,17 @@
+## DATA ANALYSIS 
+
+```{r}
+data2 = read.csv('essy_data.csv')
+summary(head(data2))
+```
+# Visual graphs
+```{r}
+library(ggplot2)
+pl1 = ggplot(data2, aes(x=age.of.mother)) + geom_bar(fill = 'blue') + ggtitle('Distribution of ages of mothers')
+pl1
+```
+```{r}
+library(ggplot2)
+pl2 = ggplot(data2, aes(age.of.child.in.months)) + geom_bar(fill = 'blue') + ggtitle("Distribution of children's ages")
+pl2
+```
